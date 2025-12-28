@@ -454,6 +454,8 @@ class Pipeline:
                 index = big_npy = None
         else:
             index = big_npy = None
+        # Force-enable pitch guidance
+        pitch_guidance = True
         audio = signal.filtfilt(bh, ah, audio)
         audio_pad = np.pad(audio, (self.window // 2, self.window // 2), mode="reflect")
         opt_ts = []
