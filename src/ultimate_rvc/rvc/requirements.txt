@@ -1,7 +1,0 @@
-torch
-gradio
-librosa
-soundfile
-numpy
-scipy
-faiss-cpu
